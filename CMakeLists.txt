@@ -70,11 +70,11 @@ install(TARGETS
 	LIBRARY DESTINATION lib 
 	RUNTIME DESTINATION bin)
 
-# #install launch file
-# install(DIRECTORY
-# 	launch
-# 	DESTINATION share/${PROJECT_NAME}
-# 	)
+#install launch file
+install(DIRECTORY
+	launch
+	DESTINATION share/${PROJECT_NAME}
+	)
 
 #install configuration file (yaml files) for param server
 # install(DIRECTORY
