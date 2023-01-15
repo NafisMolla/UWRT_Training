@@ -1,3 +1,7 @@
+
+
+
+
 #include <rclcpp/rclcpp.hpp>
 #include <turtlesim/srv/kill.hpp>
 
@@ -8,7 +12,7 @@ class kill_all_turtle_service_call: public rclcpp::Node{
 
 //Constructor
 public: 
-    explicit kill_all_turtle_service_call(const rclcpp::NodeOptions &options);
+    explicit kill_all_turtle_service_call::kill_all_turtle_service_call(const rclcpp::NodeOptions &options);
 
 private:
 //client pointer

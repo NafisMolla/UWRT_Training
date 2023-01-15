@@ -1,4 +1,4 @@
-#include <include/training/kill_alive_turtles.hpp>
+#include <training/kill_alive_turtles.hpp>
 
 namespace kill_all_turtle_composition{
 
@@ -7,6 +7,8 @@ namespace kill_all_turtle_composition{
     : Node("kill_all_turtles_service_call", options){
         //this is the service we want to call
         client_ = this->create_client<turtlesim::srv::Kill>("/kill");
+        RCLCPP_INFO(this->get_logger(), "THIS IS WORKING LETS GOOOOO");
+        
         
     }
 
