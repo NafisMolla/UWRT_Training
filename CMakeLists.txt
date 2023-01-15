@@ -56,7 +56,7 @@ ament_target_dependencies(kill_alive
 	"rclcpp_components"
 	"turtlesim"
 	"std_msgs")
-rclcpp_components_register_nodes(kill_alive "kill_all_turtle_composition::kill_alive_turtles")
+rclcpp_components_register_nodes(kill_alive "kill_all_turtle_composition::kill_alive_turtles") 
 # this way we can execute the component with - ros2 component standalone software_training composition::turtle_service_request_node
 set(node_plugins "${node_plugins}kill_all_turtle_composition::kill_alive_turtles;$<TARGET_FILE:kill_alive>\n")
 

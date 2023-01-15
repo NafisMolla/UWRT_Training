@@ -28,7 +28,7 @@ def generate_launch_description():
                 ComposableNode(
                     package='training',
                plugin='kill_all_turtle_composition::kill_alive_turtles',
-                    name='kill_all_turtles',
+                    name='kill_alive',
                     )
             ],
             output='screen',
